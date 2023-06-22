@@ -1,0 +1,39 @@
+.head {
+  border-bottom: 1px solid var(--border-cabecera-mobile);
+  box-sizing: border-box;
+  display: flex;
+  padding-top: 0.75rem;
+  position: absolute;
+  width: 100%;
+  align-items: center;
+  color: #ffffff;
+  flex-direction: column;
+  padding-bottom: 0.75rem;
+}
+
+.head__logo {
+  margin-bottom: 1rem;
+}
+
+.head__navegacion {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.head__enlace {
+  display: inline-block;
+  margin-right: 0.7rem;
+  font-size: 1.1rem;
+  margin-bottom: 0.7rem;
+  margin-left: 0.7rem;
+}
+
+/*Responsive*/
+@media screen and (min-width: 1024px) {
+  .head {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
+}
